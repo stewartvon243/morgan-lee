@@ -14,7 +14,7 @@ interface ProjectCardProps {
   className?: string;
 }
 
-export default function ProjectCard({ title, description, image, tags, href = '#', githubUrl, className }: ProjectCardProps) {
+export default function ProjectCard({ title, description, image, tags, href , githubUrl = "", className }: ProjectCardProps) {
   return (
     <Card className={cn("overflow-hidden relative glass-panel neon-border group", className)}>
       <div className="relative h-44 md:h-48 overflow-hidden">
@@ -39,7 +39,7 @@ export default function ProjectCard({ title, description, image, tags, href = '#
         </div>
         <div className="flex gap-2">
           <Button variant="link" asChild>
-            <a href={href} aria-label={`Open ${title}`} className="inline-flex items-center gap-2">
+            <a href={href} aria-label={`Open ${title}`} target="_blank" className="inline-flex items-center gap-2">
               View project <ExternalLink className="size-4" />
             </a>
           </Button>

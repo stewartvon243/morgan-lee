@@ -2,12 +2,15 @@ import { Button } from "@/components/ui/button";
 import NetworkBackground from "@/components/NetworkBackground";
 import portrait from "@/assets/morgan-lee-portrait.png";
 import ProjectCard from "@/components/ProjectCard";
-import defiImg from "@/assets/projects/defi-analytics.jpg";
-import nftImg from "@/assets/projects/nft-marketplace.jpg";
-import dashImg from "@/assets/projects/web3-dashboard.jpg";
-import ecommerceImg from "@/assets/projects/ecommerce-platform.jpg";
-import socialImg from "@/assets/projects/social-app.jpg";
-import taskImg from "@/assets/projects/task-manager.jpg";
+import ProjectImg1 from "@/assets/projects/project_img1.png";
+import ProjectImg2 from "@/assets/projects/project_img2.png";
+import ProjectImg3 from "@/assets/projects/project_img3.png";
+import ProjectImg4 from "@/assets/projects/project_img4.png";
+import ProjectImg5 from "@/assets/projects/project_img5.png";
+import ProjectImg6 from "@/assets/projects/project_img6.png";
+import ProjectImg7 from "@/assets/projects/project_img7.png";
+import ProjectImg8 from "@/assets/projects/project_img8.png";
+import ProjectImg9 from "@/assets/projects/project_img9.png";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -19,46 +22,76 @@ import TechStack from "@/components/TechStack";
 
 const projects = [
   {
-    title: "DeFi Analytics Suite",
-    description: "Realtime on-chain metrics, portfolio tracking, and risk scoring—built for speed and clarity. Features advanced charting, yield farming analytics, and automated alert systems.",
-    image: defiImg,
-    tags: ["React", "Web3", "Recharts", "Supabase"],
-    githubUrl: "https://github.com/morganlee/defi-analytics-suite",
+    title: "War Riders",
+    description: "War Riders, a blockchain-based MMO where players mine Benzene (BZN) and battle with customizable NFT vehicles in a post-apocalyptic wasteland.",
+    image: ProjectImg1,
+    href: "https://warriders.com/",
+    tags: ["NFT", "Web3", "JQuery"],
+    githubUrl: "#",
   },
   {
-    title: "NFT Marketplace",
-    description: "Curated marketplace with lazy minting, auctions, and wallet connect. Supports multiple blockchains and includes rarity scoring, collection analytics, and social features.",
-    image: nftImg,
-    tags: ["Solidity", "EVM", "React", "Node.js"],
-    githubUrl: "https://github.com/morganlee/nft-marketplace",
+    title: "Monsterra Free Play To Earn & Multi-chain NFT Game",
+    description: "Free blockchain game , where you farm, build, and battle with cute monsters to earn NFTs on chains like BNB and Avalanche.",
+    image: ProjectImg2,
+    href: "https://monsterra.io",
+    tags: ["NFT", "React", "Nginx", "Ubuntu"],
+    githubUrl: "#",
   },
   {
-    title: "Web3 Dev Dashboard",
-    description: "Developer cockpit—logs, gas insights, and automated deployment hooks. Real-time contract monitoring, transaction analysis, and CI/CD pipeline integration.",
-    image: dashImg,
-    tags: ["TypeScript", "CI/CD", "PostgreSQL"],
-    githubUrl: "https://github.com/morganlee/web3-dev-dashboard",
+    title: "MoonieNFT",
+    description: "Play-to-earn platform where users can collect unique Moonie NFTs to participate in arcade games, space missions, and price races, earning $MNY tokens and prizes in the Moonieverse",
+    image: ProjectImg3,
+    href: "https://moonie.io/",
+    tags: ["NFT", "Swiper", "OneSignal"],
+    githubUrl: "#",
   },
   {
-    title: "E-Commerce Platform",
-    description: "Full-featured online store with inventory management, payment processing, and analytics. Includes admin dashboard, customer reviews, and multi-vendor support.",
-    image: ecommerceImg,
-    tags: ["Vue.js", "Laravel", "MySQL", "Stripe"],
-    githubUrl: "https://github.com/morganlee/ecommerce-platform",
+    title: "Revenant",
+    description: "Decentralized blockchain gaming platform on the Metis Network where gamers, developers, and investors can play, earn $GAMEFI tokens, and engage with NFT-integrated games.",
+    image: ProjectImg4,
+    href: "https://revenant.io",
+    tags: ["Wordpress", "PHP", "MySQL"],
+    githubUrl: "#",
   },
   {
-    title: "Social Media App",
-    description: "Modern social platform with real-time messaging, media sharing, and community features. Built with scalable architecture and advanced content moderation.",
-    image: socialImg,
-    tags: ["React", "Node.js", "MongoDB", "Socket.io"],
-    githubUrl: "https://github.com/morganlee/social-media-app",
+    title: "Avatly - Fashion Metaverse",
+    description: "The world's first fashion metaverse mall, offering an immersive shopping experience with ultra-realistic avatars and virtual clothes on a tropical island, accessible across multiple platforms using Unreal Engine 5 and Magento.",
+    image: ProjectImg5,
+    href: "https://avatly.com/",
+    tags: ["Web3", "React", "Next.js", "Swiper"],
+    githubUrl: "",
   },
   {
-    title: "Task Management System",
-    description: "Enterprise-grade project management tool with kanban boards, time tracking, and team collaboration. Features advanced reporting and integration capabilities.",
-    image: taskImg,
-    tags: ["Angular", "C#", ".NET", "PostgreSQL"],
-    githubUrl: "https://github.com/morganlee/task-management-system",
+    title: "Age Of Zalmoxis",
+    description: "Website for Age of Zalmoxis, a play-to-earn MMORPG set in ancient Dacia, featuring NFT and blockchain integration for a fantasy adventure with historical elements.",
+    image: ProjectImg6,
+    href: "https://ageofzalmoxis.com/",
+    tags: ["NFT", "React", "Vercel"],
+    githubUrl: "",
+  },
+  {
+    title: "Befitter",
+    description: "Web3 FitnessFi and SocialFi app that rewards users with $FIU and $HEE tokens for activities like walking, running, and cycling, using NFT shoes and virtual pets to promote a healthier lifestyle.",
+    image: ProjectImg7,
+    href: "https://befitter.io/",
+    tags: ["Web3", "React", "Next.js", "Mui", "Vercel"],
+    githubUrl: "",
+  },
+  {
+    title: "Tales of Elleria",
+    description: "The website for Tales of Elleria, a play-to-earn RPG on Arbitrum where players minted heroes, earned $ELM and $MEDALS through quests, and crafted NFTs.",
+    image: ProjectImg8,
+    href: "https://www.talesofelleria.com/",
+    tags: ["React", "Next.js", "Tailwind"],
+    githubUrl: "",
+  },
+  {
+    title: "Vulcano",
+    description: "Website for Vulcano, an NFT-based play-to-earn game and metaverse featuring a battle between light and darkness.",
+    image: ProjectImg9,
+    tags: ["Web3", "React", "Next.js", "AngularJS","Vercel"],
+    href: "https://www.vulcano.gg/",
+    githubUrl: "",
   },
 ];
 
@@ -157,7 +190,7 @@ const Index = () => {
 
         <section id="projects" className="container mx-auto py-16">
           <h2 className="text-3xl font-semibold">Projects</h2>
-          <p className="text-muted-foreground mt-2">Game‑style, premium cards with visuals and quick context.</p>
+          <br />
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
             {visibleProjects.map((p) => (
               <ProjectCard
