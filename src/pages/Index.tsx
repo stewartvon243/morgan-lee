@@ -199,6 +199,7 @@ const Index = () => {
                 description={p.description}
                 image={p.image}
                 tags={p.tags}
+                href={p.href}
                 githubUrl={p.githubUrl}
               />
             ))}
