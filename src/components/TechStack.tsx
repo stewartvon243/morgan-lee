@@ -23,20 +23,22 @@ import {
   SiEthereum,
   SiVuedotjs,
   SiWordpress,
+  SiOpensourcehardware,
+  SiHexo,
+  SiElasticstack,
+  SiStackoverflow,
 } from "react-icons/si";
-import { Gamepad2, Link, Anchor } from "lucide-react";
+import { Link, Anchor } from "lucide-react";
 
 const techCategories = {
   blockchain: [
     { Icon: SiSolidity, label: "Solidity" },
     { Icon: SiRust, label: "Rust" },
     { Icon: SiWeb3Dotjs, label: "Web3.js" },
-    { Icon: Gamepad2, label: "Hardhat" },
-    { Icon: Gamepad2, label: "Truffle" },
-    { Icon: Gamepad2, label: "Anchor" },
+    { Icon: SiOpensourcehardware, label: "Hardhat" },
+    { Icon: Anchor, label: "Anchor" },
     { Icon: SiEthereum, label: "Ethereum" },
-    { Icon: Link, label: "Solana" },
-    { Icon: Anchor, label: "Polygon" },
+    { Icon: SiElasticstack, label: "Solana" },
   ],
   frontend: [
     { Icon: SiReact, label: "React" },
@@ -71,7 +73,7 @@ export default function TechStack({ className }: { className?: string }) {
     <div className={cn("space-y-12", className)}>
       {Object.entries(techCategories).map(([category, items]) => (
         <div key={category} className="text-center">
-          <h3 className="text-xl font-semibold text-primary mb-6 capitalize">{category}</h3>
+          <h3 className="text-3xl font-semibold text-primary mb-6 capitalize">{category}</h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
             {items.map(({ Icon, label }) => (
               <div 

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import NetworkBackground from "@/components/NetworkBackground";
-import portrait from "@/assets/morgan-lee-portrait.jpg";
+import portrait from "@/assets/morgan-lee-portrait.png";
 import ProjectCard from "@/components/ProjectCard";
 import defiImg from "@/assets/projects/defi-analytics.jpg";
 import nftImg from "@/assets/projects/nft-marketplace.jpg";
@@ -23,36 +23,42 @@ const projects = [
     description: "Realtime on-chain metrics, portfolio tracking, and risk scoring—built for speed and clarity. Features advanced charting, yield farming analytics, and automated alert systems.",
     image: defiImg,
     tags: ["React", "Web3", "Recharts", "Supabase"],
+    githubUrl: "https://github.com/morganlee/defi-analytics-suite",
   },
   {
     title: "NFT Marketplace",
     description: "Curated marketplace with lazy minting, auctions, and wallet connect. Supports multiple blockchains and includes rarity scoring, collection analytics, and social features.",
     image: nftImg,
     tags: ["Solidity", "EVM", "React", "Node.js"],
+    githubUrl: "https://github.com/morganlee/nft-marketplace",
   },
   {
     title: "Web3 Dev Dashboard",
     description: "Developer cockpit—logs, gas insights, and automated deployment hooks. Real-time contract monitoring, transaction analysis, and CI/CD pipeline integration.",
     image: dashImg,
     tags: ["TypeScript", "CI/CD", "PostgreSQL"],
+    githubUrl: "https://github.com/morganlee/web3-dev-dashboard",
   },
   {
     title: "E-Commerce Platform",
     description: "Full-featured online store with inventory management, payment processing, and analytics. Includes admin dashboard, customer reviews, and multi-vendor support.",
     image: ecommerceImg,
     tags: ["Vue.js", "Laravel", "MySQL", "Stripe"],
+    githubUrl: "https://github.com/morganlee/ecommerce-platform",
   },
   {
     title: "Social Media App",
     description: "Modern social platform with real-time messaging, media sharing, and community features. Built with scalable architecture and advanced content moderation.",
     image: socialImg,
     tags: ["React", "Node.js", "MongoDB", "Socket.io"],
+    githubUrl: "https://github.com/morganlee/social-media-app",
   },
   {
     title: "Task Management System",
     description: "Enterprise-grade project management tool with kanban boards, time tracking, and team collaboration. Features advanced reporting and integration capabilities.",
     image: taskImg,
     tags: ["Angular", "C#", ".NET", "PostgreSQL"],
+    githubUrl: "https://github.com/morganlee/task-management-system",
   },
 ];
 
@@ -84,7 +90,7 @@ const Index = () => {
       <div className="absolute inset-0 bg-grid-neon opacity-40 -z-10" aria-hidden />
       <header className="sticky top-0 z-20 backdrop-blur border-b border-border/50 glass-panel">
         <div className="container mx-auto py-4 flex items-center justify-between">
-          <a href="#home" className="font-semibold story-link">
+          <a href="#home" className="text-4xl font-semibold story-link">
             Morgan Lee
           </a>
           <nav className="flex items-center gap-6 text-sm">
@@ -160,6 +166,7 @@ const Index = () => {
                 description={p.description}
                 image={p.image}
                 tags={p.tags}
+                githubUrl={p.githubUrl}
               />
             ))}
           </div>

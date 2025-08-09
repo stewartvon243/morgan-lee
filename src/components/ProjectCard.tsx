@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface ProjectCardProps {
@@ -10,10 +10,11 @@ interface ProjectCardProps {
   image: string;
   tags: string[];
   href?: string;
+  githubUrl?: string;
   className?: string;
 }
 
-export default function ProjectCard({ title, description, image, tags, href = '#', className }: ProjectCardProps) {
+export default function ProjectCard({ title, description, image, tags, href = '#', githubUrl, className }: ProjectCardProps) {
   return (
     <Card className={cn("overflow-hidden relative glass-panel neon-border group", className)}>
       <div className="relative h-44 md:h-48 overflow-hidden">
@@ -36,11 +37,20 @@ export default function ProjectCard({ title, description, image, tags, href = '#
             <Badge key={t} variant="secondary">{t}</Badge>
           ))}
         </div>
-        <Button variant="link" asChild>
-          <a href={href} aria-label={`Open ${title}`} className="inline-flex items-center gap-2">
-            View project <ExternalLink className="size-4" />
-          </a>
-        </Button>
+        <div className="flex gap-2">
+          <Button variant="link" asChild>
+            <a href={href} aria-label={`Open ${title}`} className="inline-flex items-center gap-2">
+              View project <ExternalLink className="size-4" />
+            </a>
+          </Button>
+          {githubUrl && (
+            <Button variant="link" asChild>
+              <a href={githubUrl} aria-label={`View ${title} on GitHub`} className="inline-flex items-center gap-2">
+                <Github className="size-4" /> GitHub
+              </a>
+            </Button>
+          )}
+        </div>
       </CardContent>
     </Card>
   );
