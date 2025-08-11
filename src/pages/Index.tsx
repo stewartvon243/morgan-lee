@@ -114,7 +114,7 @@ const Index = () => {
     e.preventDefault();
     const subject = encodeURIComponent(`Portfolio Inquiry from ${form.name}`);
     const body = encodeURIComponent(`${form.message}\n\n— ${form.name} (${form.email})`);
-    window.location.href = `mailto:hello@morganlee.dev?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:stewartvon975@gmail.com?subject=${subject}&body=${body}`;
     toast({ title: "Opening email…", description: "Your email client will draft the message." });
   };
 
