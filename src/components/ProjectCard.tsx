@@ -45,7 +45,7 @@ export default function ProjectCard({ title, description, image, tags, href , gi
           </Button>
           {githubUrl && (
             <Button variant="link" asChild>
-              <a href={githubUrl} aria-label={`View ${title} on GitHub`} className="inline-flex items-center gap-2">
+              <a href={githubUrl} target="_blank" aria-label={`View ${title} on GitHub`} className="inline-flex items-center gap-2">
                 <Github className="size-4" /> GitHub
               </a>
             </Button>
