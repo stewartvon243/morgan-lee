@@ -238,12 +238,12 @@ const Index = () => {
                 <Button variant="hero" className="hover-scale" type="submit">
                   <Mail className="size-4" /> Send Message
                 </Button>
-                <a href="https://github.com/" aria-label="GitHub" className="story-link inline-flex items-center gap-2">
+                {/* <a href="https://github.com/" aria-label="GitHub" className="story-link inline-flex items-center gap-2">
                   <Github className="size-5" /> GitHub
                 </a>
                 <a href="https://linkedin.com/" aria-label="LinkedIn" className="story-link inline-flex items-center gap-2">
                   <Linkedin className="size-5" /> LinkedIn
-                </a>
+                </a> */}
               </div>
             </form>
           </div>
