@@ -27,7 +27,7 @@ const projects = [
     image: ProjectImg1,
     href: "https://warriders.com/",
     tags: ["NFT", "Web3", "JQuery"],
-    githubUrl: "#",
+    githubUrl: "",
   },
   {
     title: "Monsterra Free Play To Earn & Multi-chain NFT Game",
@@ -35,7 +35,7 @@ const projects = [
     image: ProjectImg2,
     href: "https://monsterra.io",
     tags: ["NFT", "React", "Nginx", "Ubuntu"],
-    githubUrl: "#",
+    githubUrl: "",
   },
   {
     title: "MoonieNFT",
@@ -43,7 +43,7 @@ const projects = [
     image: ProjectImg3,
     href: "https://moonie.io/",
     tags: ["NFT", "Swiper", "OneSignal"],
-    githubUrl: "#",
+    githubUrl: "",
   },
   {
     title: "Revenant",
@@ -51,7 +51,7 @@ const projects = [
     image: ProjectImg4,
     href: "https://revenant.io",
     tags: ["Wordpress", "PHP", "MySQL"],
-    githubUrl: "#",
+    githubUrl: "",
   },
   {
     title: "Avatly - Fashion Metaverse",
