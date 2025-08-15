@@ -15,9 +15,10 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/hooks/use-toast";
-import { Gamepad2, Mail, Github, Linkedin } from "lucide-react";
+import { Gamepad2, Mail, MessageCircle, MessageSquare, Send } from "lucide-react";
 import { useState } from "react";
 import TechStack from "@/components/TechStack";
+import { SiDiscord, SiTelegram } from "react-icons/si";
 
 
 const projects = [
@@ -35,7 +36,7 @@ const projects = [
     image: ProjectImg2,
     href: "https://tsubasa-rivals.com/",
     tags: ["NFT", "React", "Nginx", "Apache"],
-    githubUrl: "https://github.com/smartcoindev389/Smart-Contract.git",
+    githubUrl: "https://github.com/smartcoindev389/tsubasa.git",
   },
   {
     title: "Monsters Clan",
@@ -238,12 +239,13 @@ const Index = () => {
                 <Button variant="hero" className="hover-scale" type="submit">
                   <Mail className="size-4" /> Send Message
                 </Button>
-                {/* <a href="https://github.com/" aria-label="GitHub" className="story-link inline-flex items-center gap-2">
-                  <Github className="size-5" /> GitHub
+                <a href="https://t.me/blockchaindev1414" aria-label="Telegram" className="story-link inline-flex items-center gap-2">
+                  <SiTelegram className="size-8" />
                 </a>
-                <a href="https://linkedin.com/" aria-label="LinkedIn" className="story-link inline-flex items-center gap-2">
-                  <Linkedin className="size-5" /> LinkedIn
-                </a> */}
+                
+                <SiDiscord className="size-8" />
+                @morganleedev
+                <SiDiscord className="size-8" />
               </div>
             </form>
           </div>
